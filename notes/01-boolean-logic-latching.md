@@ -30,6 +30,14 @@ END_IF;
 # Good-to-know:
 
 1- AND işlem önceliği OR'dan yüksek.
+
 2- Atamalar tek satırda (Atlanmaması için).
+
 3- Cycle, yukarıdan aşağıya çalışıyor, en alttaki satır öncelikli.
+
 4- NC ve NO buton kullanımına dikkat (Reelde stop için NC buton kullanımı yaygın).
+
+
+# The Code:
+
+#iq_bRun := (#i_bStart OR #iq_bRun) AND NOT #i_bStop;
