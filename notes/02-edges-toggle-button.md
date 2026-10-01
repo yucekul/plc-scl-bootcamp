@@ -19,6 +19,7 @@
 
 
 # Good-to-know:
+
 1- Hafıza Değişkeni (Memory Bit) Türü: Kenar algılamada kullandığın geçmiş durum değişkeni (Button_Previous_State) kesinlikle kalıcı bir hafıza olmalıdır. Fonksiyon Bloğu (FB) kullanıyorsan Static (STAT) bölümünde, global değişken kullanıyorsan Data Block (DB) veya Marker (M) olarak tanımlanmalıdır. Asla Temp (Geçici) değişken olarak tanımlama, yoksa her döngüde sıfırlanacağı için kenar algılama çalışmaz.
 
 2- Satır Sıralaması: Geçmiş durumu güncellediğin satır (Button_Previous_State := Button;), her zaman pulse ürettiğin matematiksel işlemden sonra gelmelidir. Önce hafızayı güncellersen, Button ile Button_Previous_State her zaman aynı değere sahip olur ve asla pulse (tetik) alamazsın.
