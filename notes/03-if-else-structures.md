@@ -22,6 +22,7 @@ ELSE
     // Motoru güvenliğe al (Kapat) ve Hata ver.
     #q_bMotorRun := FALSE;
     #q_bError := TRUE; 
+    
 END_IF;
 
 
@@ -30,3 +31,24 @@ END_IF;
 1- Her IF bloğu mutlaka END_IF; ile kapatılmalıdır.
 
 2- IF - ELSIF - ELSE bloğu yukarıdan aşağıya doğru okunur. PLC doğru olan ilk koşulu bulduğunda o bloğun içindeki işlemi yapar ve diğer seçeneklerin hiçbirine bakmadan doğrudan END_IF sonrasına atlar.
+
+
+# The Code:
+
+IF #i_iMode = 0 THEN
+    #q_bMotorRun := FALSE;
+    #q_bError := FALSE;
+
+ELSIF #i_iMode = 1 THEN
+    #q_bMotorRun := TRUE;
+    #q_bError := FALSE;
+
+ELSIF #i_iMode = 2 THEN
+    #q_bMotorRun := #i_bAutoSensor;
+    #q_bError := FALSE;
+
+ELSE
+    #q_bMotorRun := FALSE;
+    #q_bError := TRUE; 
+
+END_IF;
