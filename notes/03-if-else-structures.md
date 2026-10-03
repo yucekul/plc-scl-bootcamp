@@ -22,7 +22,6 @@ ELSE
     // Motoru güvenliğe al (Kapat) ve Hata ver.
     #q_bMotorRun := FALSE;
     #q_bError := TRUE; 
-    
 END_IF;
 
 
@@ -50,5 +49,4 @@ ELSIF #i_iMode = 2 THEN
 ELSE
     #q_bMotorRun := FALSE;
     #q_bError := TRUE; 
-
 END_IF;
