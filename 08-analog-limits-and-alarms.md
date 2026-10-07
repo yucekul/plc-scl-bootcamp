@@ -23,5 +23,4 @@
 # Good-to-know: 
 
 1- Parazit (Gürültü) Filtreleme - TON (Zamanlayıcı) Kullanımı
-Sahada bazen bir sensörün yanından yüksek akımlı bir motor kablosu geçer ve 1 milisaniyeliğine sıcaklığı 500°C okutur. Saniyenin binde biri süren bu "elektriksel gürültü" yüzünden makineyi durdurmamalısın.
-Kural: Bir limit aşıldığında alarm vermeden önce mutlaka bir gecikme süresi (Timer - TON) koymalısın (örneğin 2 saniye).
+Sahada bazen bir sensörün yanından yüksek akımlı bir motor kablosu geçer ve 1 milisaniyeliğine sıcaklığı 500°C okutur. Saniyenin binde biri süren bu "elektriksel gürültü" yüzünden makineyi durdurmamalısın. Bir limit aşıldığında alarm vermeden önce mutlaka bir gecikme süresi (Timer - TON) koymalısın (örneğin 2 saniye).
