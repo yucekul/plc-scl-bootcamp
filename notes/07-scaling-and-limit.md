@@ -20,4 +20,4 @@ IF #i_rNormValue < -100.0 THEN
     #q_bFaultAlarm := TRUE;
     #t_rSafeNorm := 0.0; // Sistemi korumaya al.
 ELSE
-    // NORM_X ve SCALE_X kodları buraya yazılır...
+    // NORM_X ve SCALE_X kodları buraya yazılır.
