@@ -34,6 +34,6 @@ END_IF;
 
 # Good-to-know:
 
-1- FB'nin Static kısmına veya Global DB'ye açtığın reçete dizilerinin yanındaki Retain (Kalıcı) kutucuğunu mutlaka işaretlemelisin. Eğer işaretlemezsen, fabrikada hafta sonu şalterler kapatılıp pazartesi açıldığında operatörün girdiği 100 tane reçetenin tamamı sıfırlanır
+1- FB'nin Static kısmına veya Global DB'ye açtığın reçete dizilerinin yanındaki Retain (Kalıcı) kutucuğunu mutlaka işaretlemelisin. Eğer işaretlemezsen, fabrikada hafta sonu şalterler kapatılıp pazartesi açıldığında operatörün girdiği 100 tane reçetenin tamamı sıfırlanır.
 
 2- Zamanlayıcı blokları asla IF içine hapsedilmez! Her zaman ana gövdede açıkta çağrılır; sadece .Q çıkışları IF içinde sorgulanır.
