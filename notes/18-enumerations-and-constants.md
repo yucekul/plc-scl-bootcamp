@@ -4,7 +4,7 @@ Kodun içine doğrudan yazılmış, bağlamı olmayan sayılardır (Örn: `IF #S
 
 # Sabitler (Constants / Enumeration)
 
-TIA Portal'da geleneksel yazılım dillerindeki gibi (C#, Python) katı bir "Enum" komutu yoktur. Bunun yerine **Constants (Sabitler)** sekmesi kullanılır. Sabitler, program çalışırken asla değiştirilemeyen, sadece okunabilirliği artırmak için sayılara giydirilen isim kılıflarıdır.
+TIA Portal'da geleneksel yazılım dillerindeki gibi (C#, C++, Python) katı bir "Enum" komutu yoktur. Bunun yerine **Constants (Sabitler)** sekmesi kullanılır. Sabitler, program çalışırken asla değiştirilemeyen, sadece okunabilirliği artırmak için sayılara giydirilen isim kılıflarıdır.
 
 **Kötü Kod**: `CASE #stat_iStep OF 10:`
 
