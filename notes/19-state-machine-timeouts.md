@@ -16,6 +16,9 @@ Makinemiz bir adıma girdiğinde gizli bir kronometre başlar. Her adımın mant
 
 TON zamanlayıcısını her adım değişiminde sıfırlamak için, adım numarasının değiştiği o milisaniyelik anı yakalayıp Timer'ın IN bacağını sadece 1 PLC çevrimi (Cycle) boyunca FALSE yapıp geri TRUE yapmamız gerekir.
 
+
+# EX: TANK WATCHDOG
+
 // 1. ADIM DEĞİŞİMİNİ YAKALAMA (EDGE DETECTION)
 #stat_bStepChanged := (#stat_iStep <> #stat_iPrevStep);
 #stat_iPrevStep := #stat_iStep;
